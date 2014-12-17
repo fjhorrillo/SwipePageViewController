@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9CC99F191A4240BA0066B5F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC99F181A4240BA0066B5F7 /* AppDelegate.swift */; };
-		9CC99F1B1A4240BA0066B5F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC99F1A1A4240BA0066B5F7 /* ViewController.swift */; };
+		9CC99F1B1A4240BA0066B5F7 /* SwipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC99F1A1A4240BA0066B5F7 /* SwipePageViewController.swift */; };
 		9CC99F1E1A4240BA0066B5F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC99F1C1A4240BA0066B5F7 /* Main.storyboard */; };
 		9CC99F201A4240BA0066B5F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC99F1F1A4240BA0066B5F7 /* Images.xcassets */; };
 		9CC99F231A4240BA0066B5F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC99F211A4240BA0066B5F7 /* LaunchScreen.xib */; };
@@ -29,7 +29,7 @@
 		9CC99F131A4240BA0066B5F7 /* SwipePageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipePageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC99F171A4240BA0066B5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC99F181A4240BA0066B5F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CC99F1A1A4240BA0066B5F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CC99F1A1A4240BA0066B5F7 /* SwipePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipePageViewController.swift; sourceTree = "<group>"; };
 		9CC99F1D1A4240BA0066B5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CC99F1F1A4240BA0066B5F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CC99F221A4240BA0066B5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC99F181A4240BA0066B5F7 /* AppDelegate.swift */,
-				9CC99F1A1A4240BA0066B5F7 /* ViewController.swift */,
+				9CC99F1A1A4240BA0066B5F7 /* SwipePageViewController.swift */,
 				9CC99F1C1A4240BA0066B5F7 /* Main.storyboard */,
 				9CC99F1F1A4240BA0066B5F7 /* Images.xcassets */,
 				9CC99F211A4240BA0066B5F7 /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC99F1B1A4240BA0066B5F7 /* ViewController.swift in Sources */,
+				9CC99F1B1A4240BA0066B5F7 /* SwipePageViewController.swift in Sources */,
 				9CC99F191A4240BA0066B5F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +405,7 @@
 				9CC99F341A4240BA0066B5F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CC99F351A4240BA0066B5F7 /* Build configuration list for PBXNativeTarget "SwipePageViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				9CC99F371A4240BA0066B5F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
