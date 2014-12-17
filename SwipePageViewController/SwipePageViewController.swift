@@ -117,7 +117,6 @@ protocol SwipePageViewControllerDelegate {
             pages = []
             for id in self.pageStoryboardIDs!.componentsSeparatedByCharactersInSet(NSCharacterSet(charactersInString: ",; ")) {
                 let viewController: UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier(id) as UIViewController
-                println(viewController.title)
                 pages.append(viewController)
             }
         }
@@ -200,7 +199,6 @@ protocol SwipePageViewControllerDelegate {
         if ((index == NSNotFound) || (index == 0)) {
             return nil
         }
-        println("before: currentPageIndex = \(currentPageIndex)")
         return pages[--index]
     }
     
@@ -209,14 +207,12 @@ protocol SwipePageViewControllerDelegate {
         if (index == NSNotFound || index == pages.count - 1) {
             return nil
         }
-        println("after: currentPageIndex = \(currentPageIndex)")
         return pages[++index]
     }
     
     func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [AnyObject], transitionCompleted completed: Bool) {
         if (completed) {
             currentPageIndex = find(pages, pageViewController.viewControllers.last as UIViewController)!
-            println("last: currentPageIndex = \(currentPageIndex)")
         }
     }
 
