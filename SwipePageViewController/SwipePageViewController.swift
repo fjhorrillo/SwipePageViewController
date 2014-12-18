@@ -59,30 +59,30 @@ protocol SwipePageViewControllerDelegate {
         
         // example custom buttons example:
         /*
-        NSInteger width = (self.navigationController!.view.frame.size.width-(2*X_BUFFER))/3;
-        UIButton *leftButton = [[UIButton alloc]initWithFrame:CGRectMake(X_BUFFER, Y_BUFFER, width, HEIGHT)];
-        UIButton *middleButton = [[UIButton alloc]initWithFrame:CGRectMake(X_BUFFER+width, Y_BUFFER, width, HEIGHT)];
-        UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(X_BUFFER+2*width, Y_BUFFER, width, HEIGHT)];
+        let width = (self.navigationController!.view.frame.size.width - (2 * X_BUFFER)) / 3
+        let leftButton = UIButton(frame: CGRectMake(X_BUFFER, Y_BUFFER, width, HEIGHT))
+        let middleButton = UIButton(frame: CGRectMake(X_BUFFER + width, Y_BUFFER, width, HEIGHT))
+        let rightButton = UIButton(frame: CGRectMake(X_BUFFER + 2 * width, Y_BUFFER, width, HEIGHT))
         
-        [self.navigationController!.navigationBar addSubview:leftButton];
-        [self.navigationController!.navigationBar addSubview:middleButton];
-        [self.navigationController!.navigationBar addSubview:rightButton];
+        self.navigationController!.navigationBar.addSubview(leftButton)
+        self.navigationController!.navigationBar.addSubview(middleButton)
+        self.navigationController!.navigationBar.addSubview(rightButton)
         
-        leftButton.tag = 0;
-        middleButton.tag = 1;
-        rightButton.tag = 2;
+        leftButton.tag = 0
+        middleButton.tag = 1
+        rightButton.tag = 2
         
-        leftButton.backgroundColor = [UIColor colorWithRed:0.03 green:0.07 blue:0.08 alpha:1];
-        middleButton.backgroundColor = [UIColor colorWithRed:0.03 green:0.07 blue:0.08 alpha:1];
-        rightButton.backgroundColor = [UIColor colorWithRed:0.03 green:0.07 blue:0.08 alpha:1];
+        leftButton.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1)
+        middleButton.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1)
+        rightButton.backgroundColor = UIColor(red: 0.03, green: 0.07, blue: 0.08, alpha: 1)
         
-        [leftButton addTarget:self action:@selector(tapSegmentButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [middleButton addTarget:self action:@selector(tapSegmentButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [rightButton addTarget:self action:@selector(tapSegmentButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        leftButton.addTarget(self, action: Selector("tapSegmentButtonAction:"), forControlEvents: UIControlEvents.TouchUpInside)
+        middleButton.addTarget(self, action: Selector("tapSegmentButtonAction:"), forControlEvents: UIControlEvents.TouchUpInside)
+        rightButton.addTarget(self, action: Selector("tapSegmentButtonAction:"), forControlEvents: UIControlEvents.TouchUpInside)
         
-        [leftButton setTitle:@"left" forState:UIControlStateNormal];
-        [middleButton setTitle:@"middle" forState:UIControlStateNormal];
-        [rightButton setTitle:@"right" forState:UIControlStateNormal];
+        leftButton.setTitle("left", forState: UIControlState.Normal)
+        middleButton.setTitle("middle", forState: UIControlState.Normal)
+        rightButton.setTitle("right", forState: UIControlState.Normal)
         */
         
         if (pageScrollView != nil) {
