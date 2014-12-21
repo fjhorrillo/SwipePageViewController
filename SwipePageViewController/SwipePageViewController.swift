@@ -8,23 +8,24 @@
 
 import UIKit
 
-// customizeable button attributes
-let X_BUFFER: CGFloat = 0  // the number of pixels on either side of the segment
-let Y_BUFFER: CGFloat = 0  // number of pixels on top of the segment
-let HEIGHT: CGFloat   = 45 // height of the segment
-
-// customizeable selector bar attributes (the black bar under the buttons)
-let ANIMATION_SPEED   = 0.2         // the number of seconds it takes to complete the animation
-let SELECTOR_Y_BUFFER: CGFloat = 40 // the y-value of the bar that shows what page you are on (0 is the top)
-let SELECTOR_HEIGHT: CGFloat   = 4  // thickness of the selector bar
-
-let X_OFFSET: CGFloat = 8 // for some reason there's a little bit of a glitchy offset.  I'm going to look for a better workaround in the future
-
 protocol SwipePageViewControllerDelegate {
     
 }
 
 @IBDesignable class SwipePageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, UIScrollViewDelegate {
+    // Constant
+    // customizeable button attributes
+    private let X_BUFFER: CGFloat = 0  // the number of pixels on either side of the segment
+    private let Y_BUFFER: CGFloat = 0  // number of pixels on top of the segment
+    private let HEIGHT: CGFloat   = 45 // height of the segment
+    
+    // customizeable selector bar attributes (the black bar under the buttons)
+    private let ANIMATION_SPEED   = 0.2         // the number of seconds it takes to complete the animation
+    private let SELECTOR_Y_BUFFER: CGFloat = 40 // the y-value of the bar that shows what page you are on (0 is the top)
+    private let SELECTOR_HEIGHT: CGFloat   = 4  // thickness of the selector bar
+    
+    private let X_OFFSET: CGFloat = 8 // for some reason there's a little bit of a glitchy offset.  I'm going to look for a better workaround in the future
+
     // Public attributes
     var pageScrollView: UIScrollView?
     var currentPageIndex: NSInteger! = 0
